@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <style>
+        .container
+        {
+            background: yellowgreen;
+            border: 5px dashed blue;
+            display: block;
+            position: relative;
+            height: 5000px;
+        }
+
+        .item
+        {
+            width: 100px;
+            height: 50px;
+            padding: 12px;
+            background: green;
+            border: 2px solid black;
+        }
+
+        .relative
+        {
+            position: relative;
+            top: 20px;
+            left: 100px;
+        }
+
+        .absolute
+        {
+            position: absolute;
+            top: 20px;
+            left: 100px;            
+        }
+
+        .sticky
+        {
+            position: sticky;
+            top: 20px;
+            left: 100px;            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--
+        relative
+        absolute
+        absolute w/ container set to position: relative
+        sticky 
+        sticky w/ container height set to 5000px;
+    -->
+
+    <h1>The Beatles</h1>
+    <div class="container">
+        <div class="item">Paul McCartney</div>
+        <div class="item">George Harrison</div>
+        <div class="item">John Lennon</div>
+        <div class="item">Ringo Starr</div>
+        <div class="item">Pete Best</div>
+    </div>
+
+
+</body>
+</html>

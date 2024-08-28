@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        .container
+        {
+            display: grid;
+            background-color: gray;
+            /* grid-template-columns: 250px 250px 250px 250px; */
+            grid-template-columns: repeat( 3, 1fr );
+            gap: 15px 15px;
+            padding: 20px;
+        }
+
+        .album
+        {
+            padding: 15px;
+            background-color: lime;
+            border: 2px dashed black;
+            /* width: 200px; */
+        }
+
+        
+        .highlight
+        {
+            background-color: #00f;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 1;   
+            grid-column-end: 3;
+
+/*            grid-column-start: 1;
+            grid-column-end: -1;
+            grid-row-start: 2;
+            grid-row-end: 4;
+*/            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Depeche Mode Albums</h1>
+
+    <div class="container">
+        <div class="album">Speak & Spell</div>
+        <div class="album">A Broken Frame</div>
+        <div class="album">Construction Time Again</div>
+        <div class="album">Some Great Reward</div>
+        <div class="album">Black Celebration</div>
+        <div class="album">Music For The Masses</div>
+        <div class="album">Catching Up</div>
+        <div class="album highlight">101</div>
+        <div class="album">Violator</div>
+        <div class="album">Songs of Faith & Devotion</div>
+        <div class="album">Exciter</div>
+        <div class="album">Ultra</div>
+        <div class="album">Playing The Angel</div>
+        <div class="album">Sounds of the Universe</div>
+        <div class="album">Delta Machine</div>
+        <div class="album">Spirit</div>
+        <div class="album">Momento Mori</div>
+
+    </div>
+    
+</body>
+</html>

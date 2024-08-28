@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap-reverse; */
+            /* justify-content: space-between; */
+            background-color: blue;
+        }
+
+        .person
+        {
+            width: 200px;
+            height: 50px;
+            background-color: green;
+            border-radius: 2px;
+            border: 2px dashed black;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>The Spiders From Mars</h1>
+
+    <div class="container">
+
+        <div class="person">David Bowie</div>
+        <div class="person">Mick Ronson</div>
+        <div class="person">Woody Woodmansey</div>
+        <div class="person">Tony Visconti</div>
+        <div class="person">Trevor Bolder</div>
+
+    </div>
+
+</body>
+</html>

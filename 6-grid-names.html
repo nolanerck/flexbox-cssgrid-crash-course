@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Names</title>
+
+    <style>
+        .container
+        {
+            display: grid;
+            background-color: gray;
+            
+            /* grid-gap: 10px 20px; */
+            /* grid-template-columns: repeat( 4, 1fr ); */
+
+            /* grid-template-areas: "depechemode davidbowie" "davidbowie davidbowie" "davidbowie sevenseconds"; */
+
+        }
+
+        .artist
+        {
+            background-color: rgb(0, 251, 255);
+            width: 200px;
+        }
+
+        .album
+        {
+            padding: 15px;
+            background-color: lime;
+            border: 2px dashed black;
+            width: 200px;
+        }
+
+        .depechemode
+        {
+            background-color: #00f;
+            grid-area: depechemode;
+        }
+
+        .davidbowie
+        {
+            background-color: #00f;
+            grid-area: davidbowie;
+        }
+
+        .sevenseconds
+        {
+            background-color: #00f;
+            grid-area: sevenseconds;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Greatest Bands of All Time</h1>
+
+    <div class="depechemode">
+        <div class="artist">Depeche Mode</div>
+        <div class="album">Speak & Spell</div>
+        <div class="album">A Broken Frame</div>
+        <div class="album">Construction Time Again</div>
+        <div class="album">Some Great Reward</div>
+        <div class="album">Black Celebration</div>
+        <div class="album">Music For The Masses</div>
+        <div class="album">Catching Up</div>
+        <div class="album">101</div>
+        <div class="album">Violator</div>
+        <div class="album">Songs of Faith & Devotion</div>
+        <div class="album">Exciter</div>
+        <div class="album">Ultra</div>
+        <div class="album">Playing The Angel</div>
+        <div class="album">Sounds of the Universe</div>
+        <div class="album">Delta Machine</div>
+        <div class="album">Spirit</div>
+        <div class="album">Momento Mori</div>
+    </div>
+
+    <div class="davidbowie">
+        <div class="artist">David Bowie</div>
+        <div class="album">Let's Dance</div>
+        <div class="album">Ziggy Stardust</div>
+        <div class="album">Space Oddity</div>
+        <div class="album">Never Let Me Down</div>        
+        <div class="album">Black Star</div>
+    </div>
+
+    <div class="sevenseconds">
+        <div class="artist">7 Seconds</div>
+        <div class="album">Walk Together Rock Together</div>
+        <div class="album">New Wind</div>
+        <div class="album">The Crew</div>
+        <div class="album">Leave A Light On</div>
+        <div class="album">Ourselves</div>
+        <div class="album">Praise</div>
+    </div>
+    
+</body>
+</html>
